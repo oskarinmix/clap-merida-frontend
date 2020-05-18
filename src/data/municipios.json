@@ -1,0 +1,206 @@
+{
+  "municipios": [
+    {
+      "municipio": "Alberto Adriani",
+      "capital": "El Vigía",
+      "parroquias": [
+        "Presidente Betancourt",
+        "Presidente Páez",
+        "Presidente Rómulo Gallegos",
+        "Gabriel Picón González",
+        "Héctor Amable Mora",
+        "José Nucete Sardi",
+        "Pulido Méndez"
+      ]
+    },
+    {
+      "municipio": "Andrés Bello",
+      "capital": "La Azulita",
+      "parroquias": ["Andrés Bello"]
+    },
+    {
+      "municipio": "Antonio Pinto Salinas",
+      "capital": "Santa Cruz de Mora",
+      "parroquias": ["Santa Cruz de Mora", "Mesa Bolívar", "Mesa De Las Palmas"]
+    },
+    {
+      "municipio": "Aricagua",
+      "capital": "Aricagua",
+      "parroquias": ["Aricagua", "San Antonio"]
+    },
+    {
+      "municipio": "Arzobispo Chacón",
+      "capital": "Canaguá",
+      "parroquias": [
+        "Canagua",
+        "Capurí",
+        "Chacantá",
+        "El Molino",
+        "Guaimaral",
+        "Mucutuy",
+        "Mucuchachí"
+      ]
+    },
+    {
+      "municipio": "Campo Elías",
+      "capital": "Ejido",
+      "parroquias": [
+        "Fernández Peña",
+        "Matriz",
+        "Montalban",
+        "Acequias",
+        "Jají",
+        "La Mesa",
+        "San José del Sur"
+      ]
+    },
+    {
+      "municipio": "Caracciolo Parra Olmedo",
+      "capital": "Tucaní",
+      "parroquias": ["Tucaní", "Florencio Ramírez"]
+    },
+    {
+      "municipio": "Cardenal Quintero",
+      "capital": "Santo Domingo",
+      "parroquias": ["Santo Domingo", "Las Piedras"]
+    },
+    {
+      "municipio": "Guaraque",
+      "capital": "Guaraque",
+      "parroquias": ["Guaraque", "Mesa De Quintero", "Río Negro"]
+    },
+    {
+      "municipio": "Julio César Salas",
+      "capital": "Arapuey",
+      "parroquias": ["Arapuey", "Palmira"]
+    },
+    {
+      "municipio": "Justo Briceño",
+      "capital": "Torondoy",
+      "parroquias": ["San Cristóbal De Torondoy", "Torondoy"]
+    },
+    {
+      "municipio": "Libertador",
+      "capital": "Mérida",
+      "parroquias": [
+        "Antonio Spinetti Dini",
+        "Arias",
+        "Caracciolo Parra Pérez",
+        "Domingo Peña",
+        "El Llano",
+        "Gonzalo Picón Febres",
+        "Jacinto Plaza",
+        "Juan Rodríguez Suárez",
+        "Lasso De La Vega",
+        "Mariano Picón Salas",
+        "Milla",
+        "Osuna Rodríguez",
+        "Sagrario",
+        "El Morro",
+        "Los Nevados"
+      ]
+    },
+    {
+      "municipio": "Miranda",
+      "capital": "Timotes",
+      "parroquias": ["Andrés Eloy Blanco", "La Venta", "Piñango", "Timotes"]
+    },
+    {
+      "municipio": "Obispo Ramos de Lora",
+      "capital": "Santa Elena de Arenales",
+      "parroquias": [
+        "Eloy Paredes",
+        "San Rafael De Alcázar",
+        "Santa Elena de Arenales"
+      ]
+    },
+    {
+      "municipio": "Padre Noguera",
+      "capital": "Santa María De Caparo",
+      "parroquias": ["Santa Maria de Caparo"]
+    },
+    {
+      "municipio": "Pueblo Llano",
+      "capital": "Pueblo Llano",
+      "parroquias": ["Pueblo Llano"]
+    },
+    {
+      "municipio": "Rangel",
+      "capital": "Mucuchíes",
+      "parroquias": ["Cacute", "La Toma", "Mucuchíes", "Mucurubá", "San Rafael"]
+    },
+    {
+      "municipio": "Rivas Dávila",
+      "capital": "Bailadores",
+      "parroquias": ["Gerónimo Maldonado", "Bailadores"]
+    },
+    {
+      "municipio": "Santos Marquina",
+      "capital": "Tabay",
+      "parroquias": ["Santos Marquina"]
+    },
+    {
+      "municipio": "Sucre",
+      "capital": "Lagunillas",
+      "parroquias": [
+        "Chiguará",
+        "Estánquez",
+        "Lagunillas",
+        "La Trampa",
+        "Pueblo Nuevo Del Sur",
+        "San Juan"
+      ]
+    },
+    {
+      "municipio": "Tovar",
+      "capital": "Tovar",
+      "parroquias": ["El Amparo", "El Llano", "San Francisco", "Tovar"]
+    },
+    {
+      "municipio": "Tulio Febres Cordero",
+      "capital": "Nueva Bolivia",
+      "parroquias": [
+        "Independencia",
+        "María De La Concepción Palacios Y Blanco",
+        "Nueva Bolivia",
+        "Santa Apolonia"
+      ]
+    },
+    {
+      "municipio": "Zea",
+      "capital": "Zea",
+      "parroquias": ["Caño El Tigre", "Zea"]
+    }
+  ],
+  "ciudades": [
+    "Apartaderos Mérida",
+    "Arapuey",
+    "Bailadores",
+    "Caja Seca",
+    "Canaguá",
+    "Chachopo",
+    "Chiguara",
+    "Ejido",
+    "El Vigía",
+    "La Azulita",
+    "La Playa",
+    "Lagunillas Mérida",
+    "Mérida",
+    "Mesa de Bolívar",
+    "Mucuchíes",
+    "Mucujepe",
+    "Mucuruba",
+    "Nueva Bolivia",
+    "Palmarito",
+    "Pueblo Llano",
+    "Santa Cruz de Mora",
+    "Santa Elena de Arenales",
+    "Santo Domingo",
+    "Tabáy",
+    "Timotes",
+    "Torondoy",
+    "Tovar",
+    "Tucani",
+    "Zea"
+  ]
+}
