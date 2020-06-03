@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="flex justify-center items-center">
       <img
-        className="select-none w-1/3 h-auto mx-4 py-4"
+        className="select-none w-4/5 lg:w-1/3 h-auto mx-4 py-4"
         src={clap}
         alt="Clap Merida"
       />

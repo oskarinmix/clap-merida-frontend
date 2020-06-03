@@ -42,10 +42,10 @@ const Consulta = () => {
   };
   return (
     <div className="p-10 container mx-auto flex justify-center flex-col bg-gray-300">
-      <div className=" m-auto flex flex-col w-1/2">
+      <div className=" m-auto flex flex-col w-full md:w-1/2">
         <label
           htmlFor="cedula"
-          className="px-4 py-2 text-white text-2xl my-2 bg-gray-800 rounded-md"
+          className="p-2 md:px-4 md:py-2 text-white  text-lg md:text-2xl my-2 bg-gray-800 rounded-md"
         >
           Cédula de Identidad a Consultar
         </label>

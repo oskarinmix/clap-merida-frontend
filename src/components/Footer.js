@@ -9,17 +9,31 @@ const Footer = () => {
       className="select-none  w-full h-24 bg-red-700 flex items-center justify-between text-3xl text-white"
       style={{ bottom: 0 }}
     >
-      <img className="select-none h-full mx-4" src={jehyson} alt="Jehyson" />
+      <img
+        className="select-none w-24 lg:h-full mx-4"
+        src={jehyson}
+        alt="Jehyson"
+      />
       <div className="select-none flex justify-center items-center">
-        <img className="select-none h-10 px-4" src={twitter} alt="twitter" />
-        <span className="select-none text-white text-3lg">@clap_merida</span>
         <img
-          className="select-none h-10 px-4"
+          className="select-none h-6 md:h-8 lg:h-10 px-4"
+          src={twitter}
+          alt="twitter"
+        />
+        <span className="select-none hidden lg:block text-white text-3lg">
+          @clap_merida
+        </span>
+        <img
+          className="select-none h-6 md:h-8 lg:h-10 px-4"
           src={instagram}
           alt="instagram"
         />
       </div>
-      <img className="select-none h-full mx-4 py-4" src={merida} alt="Merida" />
+      <img
+        className="select-none w-24 lg:h-full mx-4 py-4"
+        src={merida}
+        alt="Merida"
+      />
     </footer>
   );
 };
