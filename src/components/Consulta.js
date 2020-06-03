@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./consulta.css";
+import Resultado from "./Resultado";
 const Consulta = () => {
   const [cedula, setCedula] = useState("");
   const [error, setError] = useState(false);
@@ -74,46 +75,7 @@ const Consulta = () => {
         </span>
       </div>
       {mostrar ? (
-        <table className=" w-full mt-5 shadow-lg">
-          <thead>
-            <tr className="rounded-lg">
-              <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
-                Cédula
-              </th>
-              <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
-                Nombre
-              </th>
-              <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
-                Municipio
-              </th>
-              <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
-                Parroquia
-              </th>
-              <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
-                Nombre del CLAP
-              </th>
-              <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
-                Comunidad
-              </th>
-
-              <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
-                Ult.Fecha Atención
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className={"bg-red-100"}>
-              <td className="border px-8 py-4">{"V-" + persona.cedula}</td>
-              <td className="border px-8 py-4">{persona.nombre}</td>
-              <td className="border px-8 py-4">{persona.municipio}</td>
-              <td className="border px-8 py-4">{persona.parroquia}</td>
-              <td className="border px-8 py-4">{persona.clap}</td>
-              <td className="border px-8 py-4">{persona.comunidad}</td>
-
-              <td className="border px-8 py-4">{genDate()}</td>
-            </tr>
-          </tbody>
-        </table>
+        <Resultado persona={persona} />
       ) : error ? (
         <div className="text-center text-2xl">
           La Cédula de Identidad no se encuentra registrada como Jefe de Familia
@@ -125,3 +87,46 @@ const Consulta = () => {
 };
 
 export default Consulta;
+
+// {
+//   /* <table className=" w-full mt-5 shadow-lg">
+//           <thead>
+//             <tr className="rounded-lg">
+//               <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
+//                 Cédula
+//               </th>
+//               <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
+//                 Nombre
+//               </th>
+//               <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
+//                 Municipio
+//               </th>
+//               <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
+//                 Parroquia
+//               </th>
+//               <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
+//                 Nombre del CLAP
+//               </th>
+//               <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
+//                 Comunidad
+//               </th>
+
+//               <th className="bg-red-700 border text-left px-8 py-4 text-xl text-white">
+//                 Ult.Fecha Atención
+//               </th>
+//             </tr>
+//           </thead>
+//           <tbody>
+//             <tr className={"bg-red-100"}>
+//               <td className="border px-8 py-4">{"V-" + persona.cedula}</td>
+//               <td className="border px-8 py-4">{persona.nombre}</td>
+//               <td className="border px-8 py-4">{persona.municipio}</td>
+//               <td className="border px-8 py-4">{persona.parroquia}</td>
+//               <td className="border px-8 py-4">{persona.clap}</td>
+//               <td className="border px-8 py-4">{persona.comunidad}</td>
+
+//               <td className="border px-8 py-4">{genDate()}</td>
+//             </tr>
+//           </tbody>
+//       </table>*/
+// }
