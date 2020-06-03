@@ -23,7 +23,11 @@ const Consulta = () => {
     const year = "2020";
     return `${day}/${month}/${year}`;
   };
-
+  const enterKey = (e) => {
+    if (e.key === "Enter") {
+      consultar();
+    }
+  };
   const consultar = async () => {
     const componente = document.querySelector(".cedula > input");
     componente.focus();
@@ -59,6 +63,7 @@ const Consulta = () => {
               setError(false);
               setMostrar(false);
             }}
+            onKeyUp={enterKey}
             value={cedula}
             autoComplete={"off"}
           />
