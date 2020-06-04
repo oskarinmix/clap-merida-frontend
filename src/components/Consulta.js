@@ -63,7 +63,7 @@ const Consulta = () => {
               setError(false);
               setMostrar(false);
             }}
-            onKeyUp={enterKey}
+            onKeyUp={(e) => enterKey(e)}
             value={cedula}
             autoComplete={"off"}
           />
