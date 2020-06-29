@@ -11895,6 +11895,12 @@ video {
   transition-delay: 1000ms;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;

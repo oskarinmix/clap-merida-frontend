@@ -1,5 +1,7 @@
 import React from "react";
 import clap from "../img/clap.png";
+// FRAMER
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div className="flex justify-center items-center">

@@ -51,10 +51,8 @@ const Table = ({ filtered }) => {
               <td className="border px-8 py-4">{item.codigo}</td>
               <td className="border px-8 py-4">{item.parroquia}</td>
               <td className="border px-8 py-4">{item.nombre}</td>
-              <td className="border px-8 py-4">
-                {Math.ceil(Math.random() * 500)}
-              </td>
-              <td className="border px-8 py-4">{genDate()}</td>
+              <td className="border px-8 py-4">{item.total}</td>
+              <td className="border px-8 py-4">{item.distribucion}</td>
               <td className="border px-8 py-4">
                 <img
                   src={edit}
