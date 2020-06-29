@@ -47,8 +47,8 @@ const Consulta = () => {
         `https://clapmerida-be.herokuapp.com/busqueda/coleccion/personas/${cedula}`
         //`http://localhost:3001/busqueda/coleccion/personas/${cedula}`
       );
-
-      if (resp.data.personas[0]) {
+      var persona = resp.data.personas[0];
+      if (persona) {
         const finaldata = await axios.post(
           // `http://localhost:3001/clap/search/`,
           `https://clapmerida-be.herokuapp.com/clap/search`,
@@ -60,8 +60,6 @@ const Consulta = () => {
         );
         const clap = finaldata.data.clap[0];
         if (clap) {
-          console.log(clap);
-          var persona = resp.data.personas[0];
           persona.fecha = clap.distribucion;
           console.log(persona);
           setPersona(persona);
