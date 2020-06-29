@@ -2,12 +2,6 @@ import React from "react";
 import edit from "../img/edit.svg";
 import Modal from "../components/Modal";
 import FormEdit from "./FormEdit";
-const genDate = () => {
-  const day = Math.ceil(Math.random() * 30);
-  const month = Math.ceil(Math.random() * 4);
-  const year = "2020";
-  return `${day}/${month}/${year}`;
-};
 
 const Table = ({ filtered }) => {
   const [isToggled, setIsToggled] = React.useState(false);

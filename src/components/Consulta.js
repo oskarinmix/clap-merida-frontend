@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import { motion } from "framer-motion";
 // COMPONENTS
 import Resultado from "./Resultado";
 import Bouncer from "./Bouncer";
@@ -77,7 +77,12 @@ const Consulta = () => {
   };
 
   return (
-    <div className="p-10 container mx-auto flex justify-center flex-col bg-gray-300">
+    <motion.div
+      className="p-10 container mx-auto flex justify-center flex-col bg-gray-300"
+      initial={{ x: "-200vw" }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className=" m-auto flex flex-col w-full md:w-1/2">
         <label
           htmlFor="cedula"
@@ -118,7 +123,7 @@ const Consulta = () => {
           en algún CLAP del Estado Mérida
         </div>
       ) : null}
-    </div>
+    </motion.div>
   );
 };
 
