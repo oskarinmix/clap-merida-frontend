@@ -44,14 +44,14 @@ const Consulta = () => {
     if (cedula.length === 0) {
     } else {
       const resp = await axios.get(
-        `http://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/busqueda/coleccion/personas/${cedula}`
+        `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/busqueda/coleccion/personas/${cedula}`
         //`http://localhost:3001/busqueda/coleccion/personas/${cedula}`
       );
       var persona = resp.data.personas[0];
       if (persona) {
         const finaldata = await axios.post(
           // `http://localhost:3001/clap/search/`,
-          `http://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap/search`,
+          `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap/search`,
           {
             municipio: resp.data.personas[0].municipio,
             parroquia: resp.data.personas[0].parroquia,
