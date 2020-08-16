@@ -30,12 +30,14 @@ export const useData = () => {
     }
   };
   const fetchData = async () => {
-    const resp = await axios.get("https://clapmerida-be.herokuapp.com/clap");
+    const resp = await axios.get(
+      `http://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap`
+    );
     setData(resp.data.claps);
   };
   const fetchClap = async (id) => {
     const resp = await axios.get(
-      `https://clapmerida-be.herokuapp.com/clap/${id}`
+      `http://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap/${id}`
     );
     setClap(resp.data.clap);
   };

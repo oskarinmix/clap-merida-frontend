@@ -3,8 +3,10 @@ import corpomerida from "../img/corpomerida.png";
 import clap from "../img/clap.png";
 import gobierno from "../img/gobierno.png";
 import { Link } from "react-router-dom";
+import { AuthContext } from "./Auth";
+import App from "../auth/auth";
 const Header = () => {
-  const currentUser = React.useContext("AuthContext");
+  const { currentUser } = React.useContext(AuthContext);
 
   return (
     <React.Fragment>
@@ -34,12 +36,20 @@ const Header = () => {
         </Link>
         <div>
           {currentUser && (
-            <Link
-              to={"/admin"}
-              className=" p-2 lg:px-10 bg-red-800 hover:bg-red-700 mx-2"
-            >
-              Administrador
-            </Link>
+            <React.Fragment>
+              <Link
+                to={"/admin"}
+                className=" p-2 lg:px-10 bg-red-800 hover:bg-red-700 mx-2"
+              >
+                Administrador
+              </Link>
+              <button
+                onClick={() => App.auth().signOut()}
+                className=" py-1 lg:px-10 bg-red-800 hover:bg-red-700 mx-2"
+              >
+                Cerrar Sesión
+              </button>
+            </React.Fragment>
           )}
           <Link
             to={"/consulta"}
