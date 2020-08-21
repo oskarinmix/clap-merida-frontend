@@ -31,13 +31,15 @@ export const useData = () => {
   };
   const fetchData = async () => {
     const resp = await axios.get(
-      `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap`
+      // `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap`
+      `http://67.205.180.49/clap`
     );
     setData(resp.data.claps);
   };
   const fetchClap = async (id) => {
     const resp = await axios.get(
-      `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap/${id}`
+      // `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap/${id}`
+      `https://67.205.180.49/clap/${id}`
     );
     setClap(resp.data.clap);
   };

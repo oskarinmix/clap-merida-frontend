@@ -44,14 +44,17 @@ const Consulta = () => {
     if (cedula.length === 0) {
     } else {
       const resp = await axios.get(
-        `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/busqueda/coleccion/personas/${cedula}`
+        // `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/busqueda/coleccion/personas/${cedula}`
+        `http://67.205.180.49/busqueda/coleccion/personas/${cedula}`
+
         //`http://localhost:3001/busqueda/coleccion/personas/${cedula}`
       );
       var persona = resp.data.personas[0];
       if (persona) {
         const finaldata = await axios.post(
           // `http://localhost:3001/clap/search/`,
-          `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap/search`,
+          `http://67.205.180.49/clap/search`,
+          // `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap/search`,
           {
             municipio: resp.data.personas[0].municipio,
             parroquia: resp.data.personas[0].parroquia,
@@ -61,7 +64,7 @@ const Consulta = () => {
         const clap = finaldata.data.clap[0];
         if (clap) {
           persona.fecha = clap.distribucion;
-          console.log(persona);
+
           setPersona(persona);
         }
 
