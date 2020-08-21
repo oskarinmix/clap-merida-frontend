@@ -45,7 +45,7 @@ const Consulta = () => {
     } else {
       const resp = await axios.get(
         // `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/busqueda/coleccion/personas/${cedula}`
-        `http://67.205.180.49/busqueda/coleccion/personas/${cedula}`
+        `https://backend.clapmerida.com/busqueda/coleccion/personas/${cedula}`
 
         //`http://localhost:3001/busqueda/coleccion/personas/${cedula}`
       );
@@ -53,7 +53,7 @@ const Consulta = () => {
       if (persona) {
         const finaldata = await axios.post(
           // `http://localhost:3001/clap/search/`,
-          `http://67.205.180.49/clap/search`,
+          `https://backend.clapmerida.com/clap/search`,
           // `https://${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}/clap/search`,
           {
             municipio: resp.data.personas[0].municipio,
